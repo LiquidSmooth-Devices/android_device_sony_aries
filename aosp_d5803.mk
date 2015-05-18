@@ -23,8 +23,6 @@ $(call inherit-product, device/sony/shinano/device.mk)
 $(call inherit-product, vendor/sony/aries/aries-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
-$(call inherit-product-if-exists, prebuilts/chromium/webview_prebuilt.mk)
-$(call inherit-product-if-exists, vendor/google/products/gms.mk)
 
 PRODUCT_COPY_FILES += \
     device/sony/aries/rootdir/system/etc/BCM4339.hcd:system/etc/firmware/BCM43xx.hcd \
@@ -67,9 +65,8 @@ PRODUCT_COPY_FILES += \
     device/sony/aries/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.preset:/system/etc/tfa98xx/VoiceCallEarpice_top.preset \
     device/sony/aries/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.eq:/system/etc/tfa98xx/VoiceCallEarpice_top.eq
 
-PRODUCT_NAME := aosp_d5803
 PRODUCT_DEVICE := aries
-PRODUCT_MODEL := Xperia Z3 Compact (AOSP)
+PRODUCT_MODEL := Xperia Z3 Compact
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 

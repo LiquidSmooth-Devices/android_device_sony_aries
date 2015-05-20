@@ -25,6 +25,6 @@ $(call inherit-product, vendor/liquid/config/common_phone.mk)
 $(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/sony/amami/aosp_d5803.mk)
+$(call inherit-product, device/sony/aries/aosp_d5803.mk)
 
 PRODUCT_NAME := liquid_aries
